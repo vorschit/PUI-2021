@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                             finish();
                         } else {
                             saveData();
+                            //save info
                             Query checkadmin = FirebaseDatabase.getInstance().getReference("Admin").orderByChild("AdminName").equalTo(username.getText().toString());
                             checkadmin.addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
