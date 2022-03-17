@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         }
     private Boolean validateName ()
     {
+        //validation textbox
         String val = username.getText().toString();
         if (val.isEmpty()) {
             username.setError("Field is empty");
