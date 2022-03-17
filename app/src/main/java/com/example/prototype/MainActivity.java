@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-
+                            //test if user/email is match
                             saveData();
                             FirebaseUser userID = mAuth.getCurrentUser();
                             Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
