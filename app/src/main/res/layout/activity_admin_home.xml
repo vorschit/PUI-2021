@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundcoloradmin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="45sp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-light"
+            ></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Dashboard"
+            android:textColor="#ffd800"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            ></TextView>
+
+    </RelativeLayout>
+
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:paddingTop="170dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:paddingTop="40dp"
+                    android:orientation="vertical"
+                    android:background="@null">
+                    <ImageButton
+                        android:id="@+id/btnPost"
+                        android:layout_width="130dp"
+                        android:layout_height="109dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:maxWidth="60dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/post2"
+                        android:text="Post Noti"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="POST NOTIFICATION"
+                        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnPost"
+                        app:layout_constraintVertical_bias="0.0"></TextView>
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="130dp"
+                        android:layout_height="109dp"
+                        android:layout_marginTop="24dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:maxWidth="100dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/update"
+                        android:text="UpdateNoti"
+                         />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="UPDATE NOTIFICATION"
+                        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+                        app:layout_constraintVertical_bias="0.32"></TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:paddingTop="20dp"
+                    android:orientation="vertical"
+                    android:background="@null">
+
+                    <ImageButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="130dp"
+                        android:layout_height="109dp"
+                        android:background="@null"
+                        android:maxWidth="60dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/search"
+                        android:text="Search"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="SEARCH AND TRACE"
+                        app:layout_constraintBottom_toTopOf="@+id/btnReport"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+                        app:layout_constraintVertical_bias="0.0"></TextView>
+
+                    <ImageButton
+                        android:id="@+id/btnReport"
+                        android:layout_width="130dp"
+                        android:layout_height="109dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:maxWidth="60dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/statistics"
+                        android:text="Report"
+                        android:layout_marginTop="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:text="REPORT"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnReport"
+                        app:layout_constraintVertical_bias="0.0"></TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

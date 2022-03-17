@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:textColor="#ffd800"
+            android:textSize="40dp"
+            android:background="@drawable/uniklpng">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="2"
+        android:columnOrderPreserved="false"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="100sp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingTop="40dp"
+            android:orientation="vertical"
+            android:background="@null"
+            android:columnCount="1"
+            android:rowCount="2">
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/qrcode"
+                android:layout_centerInParent="true">
+            </ImageButton>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/tvuserName"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp">
+
+            </TextView>
+
+        </GridLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:layout_marginTop="50sp">
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:layout_gravity="center_horizontal|center"
+                android:background="#005B9A"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-medium">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

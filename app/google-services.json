@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325335556240",
+    "firebase_url": "https://puitracing103-default-rtdb.firebaseio.com",
+    "project_id": "puitracing103",
+    "storage_bucket": "puitracing103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325335556240:android:2df7e95b2f9cda64683815",
+        "android_client_info": {
+          "package_name": "com.UniKL.PUITrace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325335556240-20mo9m2vue5pktpf5up819216tdfgtrn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2wGBu2sKodC_w-eCsiN7-o7uNLJj0wC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325335556240-20mo9m2vue5pktpf5up819216tdfgtrn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
